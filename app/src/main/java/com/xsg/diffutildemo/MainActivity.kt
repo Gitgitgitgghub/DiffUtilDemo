@@ -24,6 +24,7 @@ class MainActivity : AppCompatActivity(),View.OnClickListener {
         fetchData()
         mBinding.btnAdd.setOnClickListener(this)
         mBinding.btnDelete.setOnClickListener(this)
+        mBinding.btnResetColor.setOnClickListener(this)
     }
 
     private fun initRecyclerView(){
@@ -50,6 +51,7 @@ class MainActivity : AppCompatActivity(),View.OnClickListener {
         when(v){
             mBinding.btnAdd -> mViewModel.addOne()
             mBinding.btnDelete -> mViewModel.deleteOne()
+            mBinding.btnResetColor -> mViewModel.resetColor()
         }
     }
 }

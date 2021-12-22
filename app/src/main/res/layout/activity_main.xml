@@ -23,7 +23,7 @@
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:constraint_referenced_ids="btnAdd,btnDelete"/>
+        app:constraint_referenced_ids="btnAdd,btnDelete,btnResetColor"/>
     <Button
         android:id="@+id/btnAdd"
         android:text="add"
@@ -33,6 +33,12 @@
     <Button
         android:id="@+id/btnDelete"
         android:text="delete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/btnResetColor"
+        android:text="ResetColor"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content" />
 
